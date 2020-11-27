@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/stylesheets.css" />
+    <link rel="stylesheet" href="styles/Icons/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>PAWDRINHOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./logoPAW.png" alt="logo PAWDRINHOS" title="logo PAWDRINHOS">
+        <div class="header__menu header__menu--hide" id="menu">
+            <a href="apadrinhados.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/pata.svg" class="header__icons-icon" />
+                    <img src="./images/star.svg" class="header__icons-star" />
+                </span>
+                Apadrinhados
+            </a>
+            <a href="ongs.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/casa.svg" class="header__icons-icon" />
+                </span>
+                ONGs
+            </a>
+            <a href="perfil.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/mulher.svg" class="header__icons-icon" />
+                </span>
+                Perfil
+            </a>
+
+        </div>
+        <button class="icon-bars header__mobile-button" onclick="togglemMenu()"></button>
+    </header>
+
+    <a href="perfil.html" class="back-button"><img src="images/avanco-rapido.svg" alt=""></a>
+    <section class="profile-content">
+        <div class="profile-content__user-info container edit-page">
+            <div class="profile-content__ellipse profile-content__donator-ellipse">
+                <img src="./images/mulher2.svg" class="profile-content__ellipse-image" />
+                <input type="file" id="foto" hidden accept="image/jpeg, image/png, image/jpg" />
+                <button class="profile-content__ellipse-button" onclick="foto.click()">Alterar Foto</button>
+            </div>
+            <div class="profile-content__body">
+                <span class="profile-content__header edit-header">
+                    <h2 class="content__donator-name">Nome</h2>
+                </span>
+                <p class="profile-content__body-bio edit">bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio
+                    bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio bio </p>
+            </div>
+        </div>
+
+        <div class="email">
+            <img src="images/email.svg" alt="">
+            <input type="email" value="isabela.gabriely@hotmail.com">
+        </div>
+
+        <a href="" class="logout"><img src="images/logout.svg" alt=""> Sair</a>        
+    </section>
+
+</body>
+
+<script>
+    function togglemMenu() {
+        var menu = document.getElementById("menu");
+        if (document.getElementsByClassName("header__menu--hide").length == 0) {
+            menu.className = "header__menu header__menu--hide";
+        } else {
+            menu.className = "header__menu header__menu--show";
+
+        }
+    }
+</script>
+
+</html>

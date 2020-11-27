@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/css/stylesheets.css" />
+    <link rel="stylesheet" href="styles/Icons/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>PAWDRINHOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./logoPAW.png" alt="logo PAWDRINHOS" title="logo PAWDRINHOS">
+        <div class="header__menu header__menu--hide" id="menu">
+            <a href="apadrinhados.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/pata.svg" class="header__icons-icon" />
+                    <img src="./images/star.svg" class="header__icons-star" />
+                </span>
+                Apadrinhados
+            </a>
+            <a href="ongs.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/casa.svg" class="header__icons-icon" />
+                </span>
+                ONGs
+            </a>
+            <a href="perfil.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/mulher.svg" class="header__icons-icon" />
+                </span>
+                Perfil
+            </a>
+
+        </div>
+        <button class="icon-bars header__mobile-button" onclick="togglemMenu()"></button>
+    </header>
+
+    <section class="content container">
+        <section class="content__animal-description">
+            <div class="content__animal-description-card">
+                <img src="./images/star.svg" class="content__animal-description-card-star" />
+
+                <span class="content__animal-description-card-body">
+                    <div class="content__ellipse">
+                        <img src="./images/cao.svg" class="content__ellipse-image" />
+                    </div>
+                    <span>
+                        <h2 class="content__animal-description-card-title">Nome do animal</h2>
+                        <p class="content__animal-description-card-subtitle">Nome da ong que ele vive cidade, estado</p>
+                        <p class="content__animal-description-card-text">
+                            Descrição do animal. exemplo: O olavinho é um cachorro quieto porém nervoso. prefere brincar com papelão mas também gosta de brinquedos vermelhos. gosta de petiscos de frango.
+                        </p>
+                    </span>
+
+                </span>
+
+            </div>
+
+           <div class="content__animal-description-card">
+                <span class="content__animal-description-card-body">
+                    <div class="content__ellipse">
+                        <img src="./images/gato.svg" class="content__ellipse-image" />
+                    </div>
+                    <span>
+                        <h2 class="content__animal-description-card-title">Nome do animal</h2>
+                        <p class="content__animal-description-card-subtitle">Nome da ong que ele vive cidade, estado</p>
+                        <p class="content__animal-description-card-text">
+                            Descrição do animal. exemplo: O olavinho é um cachorro quieto porém nervoso. prefere brincar com papelão mas também gosta de brinquedos vermelhos. gosta de petiscos de frango.
+                        </p>
+                    </span>
+
+                </span>
+
+            </div>
+           <div class="content__animal-description-card">
+                <span class="content__animal-description-card-body">
+                    <div class="content__ellipse">
+                        <img src="./images/gato.svg" class="content__ellipse-image" />
+                    </div>
+                    <span>
+                        <h2 class="content__animal-description-card-title">Nome do animal</h2>
+                        <p class="content__animal-description-card-subtitle">Nome da ong que ele vive cidade, estado</p>
+                        <p class="content__animal-description-card-text">
+                            Descrição do animal. exemplo: O olavinho é um cachorro quieto porém nervoso. prefere brincar com papelão mas também gosta de brinquedos vermelhos. gosta de petiscos de frango.
+                        </p>
+                    </span>
+
+                </span>
+
+            </div>
+        </section>
+        <section class="content__donator">
+            <span class="content__donator-flex">
+                <div class="content__ellipse content__donator-ellipse">
+                     <img src="./images/paw-ribbon.svg" class="content__ellipse-ribbon" />
+                     <img src="./images/mulher2.svg" class="content__ellipse-image" />
+                </div>
+                <h2 class="content__donator-name">Nome</h2>
+            </span>
+        </section>
+    </section>
+
+</body>
+
+<script>
+    function togglemMenu() {
+        var menu = document.getElementById("menu");
+        if (document.getElementsByClassName("header__menu--hide").length == 0) {
+            menu.className = "header__menu header__menu--hide";
+        } else {
+            menu.className = "header__menu header__menu--show";
+
+        }
+    }
+</script>
+
+</html>

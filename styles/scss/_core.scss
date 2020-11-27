@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+@import './mixins';
+@import './variables';
+*, body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background: transparent;
+    &:focus{
+        outline: none;
+        border: none;
+        box-shadow: none;
+    }
+}
+//CONTAINER 
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include respond-to('device') {
+        max-width: 540px;
+    }
+
+    @include respond-to('small') {
+        max-width: 720px;
+    }
+
+    @include respond-to('medium') {
+        max-width: 960px;
+    }
+
+    @include respond-to('large') {
+        max-width: 85vw;
+    }
+    @include respond-to('extra-large') {
+        max-width: 80vw;
+    }
+}
+@import './header';
+@import './content';
+@import './profile';
