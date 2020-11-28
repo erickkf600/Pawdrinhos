@@ -14,22 +14,17 @@
     <header class="header">
         <img class="header__logo" src="./logoPAW.png" alt="logo PAWDRINHOS" title="logo PAWDRINHOS">
         <div class="header__menu header__menu--hide" id="menu">
-            <a href="apadrinhados.html" class="header__link">
+            <span></span>
+            <a href="ong-apadrinhados.html" class="header__link">
                 <span class="header__icons" href="#">
                     <img src="./images/pata.svg" class="header__icons-icon" />
                     <img src="./images/star.svg" class="header__icons-star" />
                 </span>
                 Apadrinhados
             </a>
-            <a href="ongs.html" class="header__link">
+            <a href="ong-perfil.html" class="header__link">
                 <span class="header__icons" href="#">
-                    <img src="./images/casa.svg" class="header__icons-icon" />
-                </span>
-                ONGs
-            </a>
-            <a href="perfil.html" class="header__link">
-                <span class="header__icons" href="#">
-                    <img src="./images/mulher.svg" class="header__icons-icon" />
+                    <img src="./images/casa.svg" class="header__icons-icon" style="margin-left: 4px;"/>
                 </span>
                 Perfil
             </a>
@@ -38,11 +33,11 @@
         <button class="icon-bars header__mobile-button" onclick="togglemMenu()"></button>
     </header>
 
-    <a href="perfil.html" class="back-button"><img src="images/avanco-rapido.svg" alt=""></a>
+    <a href="ong-perfil.html" class="back-button"><img src="images/avanco-rapido.svg" alt=""></a>
     <section class="profile-content">
         <div class="profile-content__user-info container edit-page">
             <div class="profile-content__ellipse profile-content__donator-ellipse">
-                <img src="./images/mulher2.svg" class="profile-content__ellipse-image" />
+                <img src="./images/house.svg" class="profile-content__ellipse-image" />
                 <input type="file" id="foto" hidden accept="image/jpeg, image/png, image/jpg" />
                 <button class="profile-content__ellipse-button" onclick="foto.click()">Alterar Foto</button>
             </div>

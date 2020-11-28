@@ -1,0 +1,19 @@
+.posts{
+    &__body{
+        width: 97%;
+        height: 165px;
+        background: rgba(196, 196, 196, 0.58);
+        @include respond-to('medium'){
+            height: 313px;
+        }
+    }
+    &__footer-text{
+        margin: 0 0 40px 0;
+        color: rgba(0, 0, 0, 0.55);
+        letter-spacing: 1.1px;
+        font: {
+            size: 25px;
+            family: $font4;
+        }
+    }
+}

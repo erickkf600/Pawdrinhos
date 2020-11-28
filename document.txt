@@ -1,0 +1,10 @@
+Apadrinhados.html = Desktop - 4
+ongs.html = Dekstop - 5
+perfil.html = Desktop - 6
+editar-perfil.html = Desktop - 7  
+perfil-animal.html = Desktop - 8
+perfil-animal.html(tab cuidados) = Desktop - 9 
+perfil-ong.html = Desktop - 10
+apadri  nhar.html = Desktop - 11
+apadrinhar.html(tab apadrinhar) = Desktop - 12
+                                       

@@ -1,0 +1,92 @@
+.new-post{
+    position: fixed;
+    bottom: 15px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: content;
+
+    &__options{
+        width: 172px;
+        height: 73px;
+        background: #F2F0F0;
+        border-radius: 20px;
+        margin: auto auto 23px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        &:after{
+            content: "";
+            width: 0;
+            height: 0;
+            position: absolute;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 20px solid #F2F0F0;
+            bottom: -20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            margin: auto;
+            transition: .3s;
+        }
+        &--hide{
+            opacity: 0;
+            transform: translateY(15%);
+            &:after{
+               opacity: 0;
+            }
+        }
+        &--show{
+            opacity: 1;
+            transform: translateY(0);
+            &:after {
+                opacity: 1;
+            }
+        }
+        button{
+            flex: 1;
+            width: 100%;
+            border-bottom: 1px solid #B7B7B7;
+            color: #EB2D2D;
+            transition: .3s;
+            border-radius: 20px 20px 0 0;
+            font: {
+                size: 14px;
+                family: $font;
+            }
+            &:last-child{
+                border: none;
+                border-radius: 0 0 20px 20px;
+            }
+            &:hover{
+                background: #e6e6e6
+            }
+        }
+    }
+    
+
+    &__button{
+        background: #D6FCDA;
+        border-radius: 50px;
+        width: 220px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+        font: {
+            family: $font;
+            weight: bold;
+            size: 40px
+        }
+        img {
+            width: 45px;
+            margin-left: 10px;
+        }
+    }
+    
+}

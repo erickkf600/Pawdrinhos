@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="styles/css/stylesheets.css" />
+    <link rel="stylesheet" href="styles/Icons/style.css" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>PAWDRINHOS</title>
+</head>
+
+<body>
+    <header class="header">
+        <img class="header__logo" src="./logoPAW.png" alt="logo PAWDRINHOS" title="logo PAWDRINHOS">
+        <div class="header__menu header__menu--hide" id="menu">
+           <span></span>
+            <a href="ong-apadrinhados.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/pata.svg" class="header__icons-icon" />
+                    <img src="./images/star.svg" class="header__icons-star" />
+                </span>
+                Apadrinhados
+            </a>
+            <a href="ong-perfil.html" class="header__link">
+                <span class="header__icons" href="#">
+                    <img src="./images/casa.svg" class="header__icons-icon" style="margin-left: 4px;"/>
+                </span>
+                Perfil
+            </a>
+
+        </div>
+        <button class="icon-bars header__mobile-button" onclick="togglemMenu()"></button>
+    </header>
+    <a href="ong-apadrinhados.html" class="back-button"><img src="images/avanco-rapido.svg" alt=""></a>
+    <section class="profile-content">
+        <div>
+            <div class="profile-content__user-info container">
+                <div class="profile-content__ellipse profile-content__donator-ellipse">
+                    <img src="./images/cao.svg" class="profile-content__ellipse-image" />
+                </div>
+                <div class="profile-content__body">
+                    <h2 class="content__animal-description-card-title">Nome do animal</h2>
+                    <p class="content__animal-description-card-subtitle">Nome da ong que ele vive, cidade, estado</p>
+                    <p class="content__animal-description-card-text">
+                        O olavinho é um cachorro quieto porém nervoso. prefere brincar com papelão mas também gosta de
+                        brinquedos vermelhos. gosta de petiscos de frango.
+                    </p>
+                </div>
+            </div>
+            <section class="profile-content__divider">
+                <div class="container width" id="tabs">
+                    <button class="profile-content__divider-afiliados" data-id="tab1" onclick="changeTab(1)">
+                        Publicações <img src="./images/star.svg" id="star1" class="profile-content__divider-star star" />
+                    </button>
+                    <button class="profile-content__divider-afiliados" data-id="tab2"  onclick="changeTab(2)">
+                        Cuidados <img src="./images/star.svg" id="star2" class="profile-content__divider-star star inactive" />
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <section class="profile-content__afiliados-width container tab" id="tab1">
+            <div class="content__animal-description m-top-30">
+            <div class="posts">
+                <div class="posts__body"></div>
+                <p class="posts__footer-text">29 de setembro de 2020 ás 01:31</p>
+            </div>
+            <div class="posts">
+                <div class="posts__body"></div>
+                <p class="posts__footer-text">29 de setembro de 2020 ás 01:31</p>
+            </div>
+            <div class="posts">
+                <div class="posts__body"></div>
+                <p class="posts__footer-text">29 de setembro de 2020 ás 01:31</p>
+            </div>
+            </div>
+        </section>
+        <section class="profile-content__afiliados inactive tab" id="tab2">
+            <div class="content__animal-description care m-top-30">
+                <div class="care__list">
+                    <p class="care__list-title">Lista mensal</p>
+
+                    <button class="care__list-button">3kg de ração</button>
+                    <button class="care__list-button">250ml de shampoo</button>
+                    <button class="care__list-button">250ml de shampoo</button>
+                </div>
+                <div class="care__buy-list"></div>
+            </div>
+        </section>
+
+        <div class="new-post">
+            <div class="new-post__options new-post__options--hide" id="new-post">
+                <button onclick="handleCamera()">Abrir Câmera</button>
+                <input type="file" id="foto" hidden accept="image/jpeg, image/png, image/jpg" />
+                <button onclick="foto.click()">Carregar Imagem de Fotos</button>
+            </div>
+            <button class="new-post__button" onclick="toggleOptions()">Postar 
+                <img src="images/camera.svg" alt="">
+            </button>
+        </div>
+    </section>
+
+</body>
+<script src="tab.js"></script>
+<script src="camera.js"></script>
+<script src="mobile-menu.js"></script>
+
+</html>

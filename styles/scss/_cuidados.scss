@@ -1,0 +1,66 @@
+.care{
+    display: grid;
+    gap: 9rem;
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    min-width: 98.7vw;
+    @include respond-to('medium'){
+        grid-template-columns: 1.3fr 1fr;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        &-title{
+            text-transform: uppercase;
+            text-align: center;
+            font: {
+                size: 35px;
+                family: $font;
+            }
+        }
+        &-button{
+            background: #FCDFD6;
+            height: 40px;
+            margin: 10px 0 0 0;
+            transition: .3s;
+            border: solid 1px transparent;
+            &:hover{
+                border-color: #e3b9ac;
+            }
+            font: {
+                size: 21px;
+                family: $font;
+            }
+            &:nth-child(3){
+                background: #D9ECFD;
+                &:hover {
+                    border-color: #9fb3c4;
+                }
+            }
+            &:nth-child(4){
+                background: #FDFF97;
+                 &:hover {
+                     border-color: #d4d66d;
+                 }
+            }
+        }
+
+    }
+
+    &__buy-list{
+        margin-bottom: 3rem;
+        &-logos {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            &-store {
+                width: 35%;
+                object-fit: contain;
+                &:nth-child(2){
+                    width: 22%
+                }
+            }
+        }
+    }
+}
