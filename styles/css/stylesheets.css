@@ -521,9 +521,46 @@ button:focus {
   width: 30px;
   margin-left: 10px;
 }
-.profile-content__header.edit-header {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+.profile-content__header.edit-header input,
+.profile-content__header.edit-header textarea {
+  border: none;
   color: rgba(0, 0, 0, 0.55);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+  width: 98%;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+.profile-content__header.edit-header input:focus,
+.profile-content__header.edit-header textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid black;
+}
+.profile-content__header.edit-header textarea {
+  min-height: 100px;
+  overflow-y: auto;
+  resize: none;
+  text-align: left;
+  font-size: 21px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+.profile-content__header.edit-header textarea::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+.profile-content__header.edit-header textarea::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+.profile-content__header.edit-header textarea::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.28);
+}
+@media (min-width: 992px) {
+  .profile-content__header.edit-header textarea {
+    overflow-y: scroll;
+  }
 }
 .profile-content__body-bio {
   margin-top: 2rem;

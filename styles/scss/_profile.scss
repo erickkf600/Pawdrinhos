@@ -155,8 +155,54 @@
             }
         }
         &.edit-header{
-            border-bottom: 1px solid rgba(0, 0, 0, 0.22);
-            color: rgba(0, 0, 0, 0.55);
+            // border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+            // color: rgba(0, 0, 0, 0.55);
+            input,
+            textarea {
+                border: none;
+                color: rgba(0, 0, 0, 0.55);
+                border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+                width: 98%;
+                margin-bottom: 20px;
+               font: {
+                   size: 40px;
+                   family: $font2;
+                   weight: normal;
+               }
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                    border-bottom: 1px solid rgba(0, 0, 0, 1);
+                }
+            }
+            textarea{
+                min-height: 100px;
+                overflow-y: auto;
+                 resize: none;
+                 text-align: left;
+                 font: {
+                     size: 21px;
+                     family: $font2;
+                     weight: normal;
+                 }
+                 &::-webkit-scrollbar {
+                     width: 0;
+                     background: transparent
+                 }
+
+                 &::-webkit-scrollbar-track {
+                     background: #f0f0f0
+                 }
+
+                 &::-webkit-scrollbar-thumb {
+                     background: rgba(0, 0, 0, 0.28);
+                 }
+
+                 @include respond-to('medium') {
+
+                     overflow-y: scroll;
+                 }
+            }
         }
     }
     &__body{
